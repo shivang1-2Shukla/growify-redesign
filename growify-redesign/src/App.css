@@ -30,7 +30,7 @@ nav a:hover {
   color: #a35d34;
 }
 
-header button {
+header button, .header-cta {
   padding: 12px 18px;
   border: 1px solid #1d1b18;
   border-radius: 999px;
@@ -39,7 +39,7 @@ header button {
   transition: background-color 0.2s ease;
 }
 
-header button:hover {
+header button:hover, .header-cta:hover {
   background-color: #a35d34;
 }
 
@@ -238,5 +238,299 @@ main p {
 
   .service-card h3 {
     margin-top: 52px;
+  }
+}
+
+.products-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 32px;
+  border-top: 1px solid #ded8cf;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.product-card {
+  display: flex;
+  min-height: 320px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+  border: 1px solid #ded8cf;
+  background-color: #f7f4ef;
+}
+
+.product-card-featured {
+  color: #f7f4ef;
+  border-color: #1d1b18;
+  background-color: #1d1b18;
+}
+
+.product-label {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #a35d34;
+}
+
+.product-card h3 {
+  margin: 72px 0 12px;
+  font-size: 38px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.product-card p:not(.product-label) {
+  margin: 0;
+  line-height: 1.5;
+  color: #645f58;
+}
+
+.product-card-featured p:not(.product-label) {
+  color: #d9d1c7;
+}
+
+.product-link {
+  margin-top: 32px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.product-link span {
+  margin-left: 6px;
+  color: #d89468;
+}
+
+@media (max-width: 700px) {
+  .products-section {
+    padding: 72px 20px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+    margin-top: 32px;
+  }
+
+  .product-card {
+    min-height: 260px;
+  }
+
+  .product-card h3 {
+    margin-top: 56px;
+  }
+}
+
+.case-studies-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 32px;
+}
+
+.case-study-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.case-study-card {
+  display: flex;
+  min-height: 460px;
+  flex-direction: column;
+  padding: 32px;
+  border: 1px solid #ded8cf;
+  background-color: #e5ddd2;
+}
+
+.case-study-card-dark {
+  color: #f7f4ef;
+  border-color: #1d1b18;
+  background-color: #1d1b18;
+}
+
+.case-study-label {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #a35d34;
+}
+
+.case-study-card h3 {
+  max-width: 460px;
+  margin: 100px 0 16px;
+  font-size: clamp(34px, 4vw, 54px);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+}
+
+.case-study-card p:not(.case-study-label) {
+  max-width: 460px;
+  margin: 0;
+  line-height: 1.5;
+  color: #645f58;
+}
+
+.case-study-card-dark p:not(.case-study-label) {
+  color: #d9d1c7;
+}
+
+.case-study-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 36px;
+}
+
+.case-study-tags span {
+  padding: 7px 10px;
+  border: 1px solid #c9beb0;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+.case-study-card-dark .case-study-tags span {
+  border-color: #645f58;
+}
+
+.case-study-card .text-link {
+  margin-top: 28px;
+}
+
+.case-study-note {
+  margin: 20px 0 0;
+  font-size: 13px;
+  color: #645f58;
+}
+
+@media (max-width: 700px) {
+  .case-studies-section {
+    padding: 72px 20px;
+  }
+
+  .case-study-grid {
+    grid-template-columns: 1fr;
+    margin-top: 32px;
+  }
+
+  .case-study-card {
+    min-height: 390px;
+    padding: 24px;
+  }
+
+  .case-study-card h3 {
+    margin-top: 72px;
+  }
+}
+
+.contact-section {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 64px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 32px;
+  color: #f7f4ef;
+  background-color: #1d1b18;
+}
+
+.contact-intro h2 {
+  max-width: 520px;
+  margin: 0;
+  font-size: clamp(42px, 5vw, 68px);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+}
+
+.contact-intro > p:last-child {
+  max-width: 420px;
+  margin-top: 24px;
+  line-height: 1.5;
+  color: #d9d1c7;
+}
+
+.contact-form {
+  display: grid;
+  gap: 20px;
+}
+
+.contact-form label {
+  display: grid;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #645f58;
+  border-radius: 0;
+  color: #f7f4ef;
+  background-color: transparent;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #a69d92;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 1px solid #d89468;
+  border-color: #d89468;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  justify-self: start;
+  padding: 14px 20px;
+  border: 0;
+  border-radius: 999px;
+  color: #1d1b18;
+  background-color: #f7f4ef;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.form-success {
+  align-self: center;
+  padding: 32px;
+  border: 1px solid #645f58;
+}
+
+.form-success h3 {
+  margin: 20px 0 12px;
+  font-size: 34px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.form-success p:last-child {
+  margin: 0;
+  line-height: 1.5;
+  color: #d9d1c7;
+}
+
+@media (max-width: 700px) {
+  .contact-section {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    padding: 72px 20px;
   }
 }

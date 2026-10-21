@@ -42,6 +42,9 @@ Important constraints from the supplied assignment:
 - Header now contains a horizontal desktop layout, hover states, a mobile navigation row, and a responsive heading scale.
 - Added responsive hero styling, dual CTA treatment, and a simple commerce/growth/AI feature panel.
 - Added a responsive three-column Services card grid that becomes one column on mobile.
+- Added a responsive Products & Technology grid, featuring a visually distinct Lookify card and mobile stacking.
+- A CSS-cleanup refactor was attempted, then reverted at the learner's request after visual inconsistencies. Retain the current original section-by-section CSS structure unless explicitly asked to revisit it.
+- Added responsive styling for the Work With Us form, its success state, and the header CTA link.
 
 ### `src/App.jsx`
 
@@ -52,16 +55,21 @@ Important constraints from the supplied assignment:
   - A non-metric feature panel
 - Added an accessible Services section with three content cards: Commerce experiences, Demand & retention, and Data & AI operations.
 - Corrected the Services grid class name and content typos after review.
+- Added an accessible Products & Technology section:
+  - Lookify card with verified link: `https://lookify.in/`
+  - Rossify and Craftify cards clearly marked "Details to be verified"
+- Added a front-end Work With Us lead form with required fields, browser validation, and an in-page submitted state. It intentionally does not transmit data until a FastAPI endpoint is added.
 
 ### Current code status
 
 - The header, hero, and Services section are styled and responsive.
+- `npm run lint` and `npm run build` both pass after the CSS refactor.
 - The Vite starter styling has been removed from both CSS files.
 - `npm run lint` was checked before the header exercise; it then reported only the expected leftover starter imports/state. Those were subsequently removed. Run lint again after the next edit to verify the current state.
 
 ## Next planned step
 
-Create a Products & Technology section for Lookify, Rossify, and Craftify. Clearly distinguish verified information from placeholders that require product inputs.
+Create at least one detailed inner-page experience next, beginning with a reusable case-study-page structure. Use only supplied Growify information and clearly label anything that needs approval.
 
 ## Mentoring style
 
