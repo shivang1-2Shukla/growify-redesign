@@ -22,6 +22,19 @@ Important constraints from the supplied assignment:
 
 ## Changes completed
 
+### Multi-page foundation
+
+- Installed `react-router-dom`.
+- Wrapped the app in `BrowserRouter` in `src/main.jsx`.
+- Replaced the single large `App` component with a route configuration containing the homepage route (`/`). No empty inner-page routes were created.
+- Moved the existing homepage markup and front-end form state into `src/pages/HomePage.jsx` without changing its content or behaviour.
+- Added reusable shared components:
+  - `src/components/SiteHeader.jsx`
+  - `src/components/SiteFooter.jsx`
+  - `src/components/SiteLayout.jsx`
+- Added only the minimal footer styling needed for the new shared layout. Existing homepage styling and colour palette remain unchanged.
+- Verified with `npm run lint`, `npm run build`, and an HTTP 200 response from the Vite development server.
+
 ### `src/App.jsx`
 
 - Removed the Vite starter screen and counter.
@@ -69,7 +82,15 @@ Important constraints from the supplied assignment:
 
 ## Next planned step
 
-Create at least one detailed inner-page experience next, beginning with a reusable case-study-page structure. Use only supplied Growify information and clearly label anything that needs approval.
+Define and apply the visual direction to the shared layout and homepage before building the first inner-page experience.
+
+### Agreed visual-direction phase
+
+- Aim: elevate the current functional homepage into a premium editorial fashion, luxury-commerce, growth, and AI-technology experience.
+- Preserve the current routing foundation and homepage functionality while visual work begins.
+- Proposed visual language: warm stone and ink-black base, restrained copper accent, refined display serif paired with a precise sans-serif, generous whitespace, fine rules, asymmetrical editorial compositions, and product-interface moments for AI technology.
+- Avoid generic repeated card grids, decorative animation, invented proof, unverified logos, and visual changes that do not support a business story.
+- First visual implementation scope: shared typography/spacing, header/footer refinement, then the homepage hero. Do not start the Mahima Mahajan page until this visual system is established.
 
 ## Mentoring style
 

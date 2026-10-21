@@ -92,11 +92,11 @@ main p {
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.14em;
-  color: #a35d34;
+  color: var(--color-copper);
 }
 
 .hero-section h1 span {
-  color: #a35d34;
+  color: var(--color-copper);
 }
 
 .hero-section .hero-copy {
@@ -113,8 +113,8 @@ main p {
 .primary-button {
   padding: 14px 20px;
   border-radius: 999px;
-  color: #f7f4ef;
-  background-color: #1d1b18;
+  color: var(--color-stone);
+  background-color: var(--color-ink);
   font-size: 14px;
   font-weight: 700;
 }
@@ -126,14 +126,14 @@ main p {
 
 .text-link span {
   margin-left: 6px;
-  color: #a35d34;
+  color: var(--color-copper);
 }
 
 .hero-panel {
   margin-top: 96px;
   padding: 22px 24px;
-  border-top: 1px solid #ded8cf;
-  border-bottom: 1px solid #ded8cf;
+  border-top: 1px solid var(--color-sand);
+  border-bottom: 1px solid var(--color-sand);
 }
 
 .hero-panel p {
@@ -141,7 +141,7 @@ main p {
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.12em;
-  color: #a35d34;
+  color: var(--color-copper);
 }
 
 .hero-panel div {
@@ -153,7 +153,7 @@ main p {
 
 .hero-panel span {
   padding: 8px 12px;
-  border: 1px solid #ded8cf;
+  border: 1px solid var(--color-sand);
   border-radius: 999px;
   font-size: 14px;
 }
@@ -527,10 +527,37 @@ main p {
   color: #d9d1c7;
 }
 
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px;
+  border-top: 1px solid #ded8cf;
+}
+
+.site-footer p {
+  max-width: 320px;
+  margin: 0;
+  color: #645f58;
+  text-align: right;
+}
+
 @media (max-width: 700px) {
   .contact-section {
     grid-template-columns: 1fr;
     gap: 48px;
     padding: 72px 20px;
+  }
+
+  .site-footer {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 28px 20px;
+  }
+
+  .site-footer p {
+    text-align: left;
   }
 }
